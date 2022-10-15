@@ -67,7 +67,7 @@ function App() {
     return (
         <div className="flex items-center justify-center content-center">
             <form onSubmit={submitManager} className="bg-gray-800 p-2 w-fit h-screen relative max-w-3xl">
-                <ul className="max-w-full overflow-y-auto h-80 mb-4">
+                <ul className="max-w-full overflow-y-auto mb-4 message-content">
                     {
                         messages.map((message, index) => (
                             <li className={
@@ -78,10 +78,10 @@ function App() {
                         ))
                     }
                 </ul>
-                <div className="absolute bottom-1 left-2 right-2">
+                <div className="absolute bottom-1 left-2 right-2 bg-gray-800">
                     <input
                         type="text"
-                        className="mb-1 p-0.5 w-full text-center"
+                        className="mb-1 mt-1 p-0.5 w-full text-center"
                         placeholder="Tu nombre"
                         onChange={handlerNickName}
                         id="nickname"
