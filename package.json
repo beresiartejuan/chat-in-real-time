@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node ./server/index.js",
     "dev": "nodemon ./server/index.js",
-    "build": "npm run --prefix client build"
+    "build": "cd client && npm install --only=dev && npm run build"
   },
   "repository": {
     "type": "git",
