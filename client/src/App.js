@@ -67,7 +67,7 @@ function App() {
     return (
         <div className="flex items-center justify-center content-center">
             <form onSubmit={submitManager} className="bg-gray-800 p-2 w-fit h-screen relative max-w-3xl">
-                <ul className="max-w-full overflow-hidden mb-4">
+                <ul className="max-w-full overflow-y-auto h-80 mb-4">
                     {
                         messages.map((message, index) => (
                             <li className={
