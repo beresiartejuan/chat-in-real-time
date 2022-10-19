@@ -27,7 +27,7 @@ io.on('connection', (socket) => {
 
     socket.broadcast.emit('message', {
         body: "Alguien ingreso al chat",
-        frpm: "Bot Online"
+        from: "Bot Online"
     })
 
     socket.on('register', (nickname) => {
