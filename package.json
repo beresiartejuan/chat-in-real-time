@@ -5,10 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "build": "npm i -D --prefix ./client && npm run build --prefix ./client",
-    "dev-client": "npm run dev --prefix ./client",
+    "build": "cd client && npm i -D && npm i && npm run build",
     "start": "node index.js"
   },
   "keywords": [],
