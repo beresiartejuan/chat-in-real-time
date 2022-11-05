@@ -25,7 +25,7 @@ const io = new SocketServer(server)
 
 const chats = {}
 
-const global_chat = new Chat('GLOBAL');
+const global_chat = new Chat('B000-GLOBAL');
 chats[global_chat.id] = global_chat;
 
 io.on("connection", (socket) => {
