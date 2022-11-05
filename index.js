@@ -17,15 +17,11 @@ app.use(express.urlencoded({
     extended: false
 }))
 
-//app.use(express.static(join(getPath(), "client/build")))
+app.use(express.static(join(getPath(), "client/dist")))
 
 const server = createServer(app)
 
-const io = new SocketServer(server, {
-    cors: {
-        origin: '*'
-    }
-})
+const io = new SocketServer(server)
 
 const chats = {}
 

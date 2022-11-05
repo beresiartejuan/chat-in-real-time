@@ -7,13 +7,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "build": "npm run build --prefix ./client",
-    "dev-client": "npm run dev --prefix ./client"
+    "build": "npm i --only-dex --prefix ./client && npm run build --prefix ./client",
+    "dev-client": "npm run dev --prefix ./client",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "build": "^0.1.4",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "helmet": "^6.0.0",
